@@ -1,0 +1,16 @@
+//
+//  Education.pch
+//  Education
+//
+//  Created by dev-aozhimin on 16/2/19.
+//  Copyright © 2016年 com.aozhimin. All rights reserved.
+//
+
+#ifndef Education_pch
+#define Education_pch
+
+#import "ToolBox.h"
+#import "Masonry.h"
+#import "DataManager.h"
+
+#endif /* Education_pch */
