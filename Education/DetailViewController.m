@@ -130,6 +130,8 @@
 //        if (wmPlayer==nil) {
 //            return;
 //        }
+//        self.videoBgView isdis
+//        
 //        
 //        if (wmPlayer.superview) {
 //            CGRect rectInTableView = [self.tableView rectForRowAtIndexPath:currentIndexPath];
