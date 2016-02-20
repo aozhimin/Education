@@ -179,7 +179,7 @@
         <!--Detail View Controller-->
         <scene sceneID="BA3-Ob-6Wx">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="rOk-sL-QIW" customClass="DetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailViewController" hidesBottomBarWhenPushed="YES" id="rOk-sL-QIW" customClass="DetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9KU-Nl-0dW"/>
                         <viewControllerLayoutGuide type="bottom" id="9lp-CE-j4N"/>
@@ -274,6 +274,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="CFU-jY-tNi"/>
                     <connections>
+                        <outlet property="scrollView" destination="bqA-te-PDp" id="XGo-cy-2TM"/>
                         <outlet property="tableView" destination="BWG-j4-BrB" id="ymY-lt-Mif"/>
                         <outlet property="videoBgView" destination="0nY-2H-M12" id="iRI-QX-OhL"/>
                     </connections>

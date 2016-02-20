@@ -8,6 +8,8 @@
 
 #import "HomeViewController.h"
 #import "HomeTableViewCell.h"
+#import "DetailViewController.h"
+#import "UIStoryboard+Helper.h"
 
 static NSString * const navigationTitleText = @"在外留学";
 
@@ -51,15 +53,26 @@ static NSString * const navigationTitleText = @"在外留学";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *identifier = @"cell";
     HomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
-    UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(videoPreviewTapped)];
-    [cell.videoPreviewImageView addGestureRecognizer:gesture];
+//    UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(videoPreviewTapped:)];
+//    [cell.videoPreviewImageView addGestureRecognizer:gesture];
     cell.model = [self.videoArray objectAtIndex:indexPath.row];
 
     return cell;
 }
 
-- (void)videoPreviewTapped {
-    [self performSegueWithIdentifier:@"seguePushDetail" sender:nil];
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        VideoModel *video = [self.videoArray objectAtIndex:indexPath.row];
+    DetailViewController *vc = [UIStoryboard storyboardName:Storyboard_Home viewControllerWithIdentifier:@"detailViewController"];
+    vc.videoModel = video;
+    [self.navigationController pushViewController:vc animated:YES];
+
 }
+
+//- (void)videoPreviewTapped:(UITapGestureRecognizer *)gesture {
+//    UIView *view = gesture.view;
+//    [self performSegueWithIdentifier:@"seguePushDetail" sender:nil];
+//
+//}
 
 @end

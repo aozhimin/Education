@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VideoModel.h"
 
 @interface DetailViewController : UIViewController
+
+@property (nonatomic, strong) VideoModel *videoModel;
 
 @end
