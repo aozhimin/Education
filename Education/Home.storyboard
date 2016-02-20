@@ -217,10 +217,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BWG-j4-BrB">
-                                        <rect key="frame" x="0.0" y="290" width="320" height="600"/>
+                                        <rect key="frame" x="0.0" y="290" width="320" height="1600"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="600" id="xLz-fn-u3H"/>
+                                            <constraint firstAttribute="height" constant="1600" id="xLz-fn-u3H"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="delegate" destination="rOk-sL-QIW" id="gBz-ll-8RR"/>

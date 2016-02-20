@@ -546,6 +546,7 @@
 				TargetAttributes = {
 					15AE2D981C775EE000C0EED6 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 3BF95CM67V;
 					};
 					15AE2DB11C775EE000C0EED6 = {
 						CreatedOnToolsVersion = 7.2;
@@ -795,11 +796,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Education/Education.pch;
 				INFOPLIST_FILE = Education/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.aozhimin.Education;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.education;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -808,11 +810,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Education/Education.pch;
 				INFOPLIST_FILE = Education/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.aozhimin.Education;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.education;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

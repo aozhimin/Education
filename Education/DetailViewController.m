@@ -134,6 +134,8 @@
         }
         if (self.scrollView.contentOffset.y + 64 > playerFrame.size.height) {
             [self toSmallScreen];
+        } else {
+            [self toCell];
         }
         NSLog(@"offset:%f", self.scrollView.contentOffset.y);
         
