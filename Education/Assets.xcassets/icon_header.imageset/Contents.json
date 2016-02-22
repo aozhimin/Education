@@ -2,16 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "920AFEF752EB7977EE546A05CDAA9ECE.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "carbon-app_tbeaavy6-1.jpg",
+      "filename" : "920AFEF752EB7977EE546A05CDAA9ECE-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "carbon-app_tbeaavy6.jpg",
+      "filename" : "920AFEF752EB7977EE546A05CDAA9ECE-2.png",
       "scale" : "3x"
     }
   ],
